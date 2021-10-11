@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+    <title>Border Radius Previewer</title>
+</head>
+<div class="app">
+    <div id="hero">
+        <h1>Hey there! Welcome to my Border Radius Previewer</h1>
+        <p>
+            The border-radius property can have multiple values changed. Preview how the shape looks while changing these values.
+        </p>
+        <p>You can test on this box!!</p>
+    </div>
+
+    <div class="boxchange">
+        <div class="sliders">
+            <form id="raduisType" value="px">
+                <span><label>Pixles</label><input type="radio" name="rtype" checked value="px" onclick="changetype(rtype.value)"> </span>
+                <span><label>Percentage</label><input type="radio" name="rtype" value="%" onclick="changetype(rtype.value)"> </span>
+            </form>
+            <span><label>Top left</label> <input  type="range" min="0" max="100"  value="0" name="top-left" id="tl" /></span>
+            <span><label>Top right</label><input  type="range" min="0" max="100"  value="0" name="top-right" id="tr" /> </span>
+            <span><label>bottom left</label><input  type="range" min="0" max="100"  value="0" name="bottom-left" id="bl" /> </span>
+            <span><label>bottom right</label><input  type="range" min="0" max="100"  value="0" name="bottom-right" id="br" /> </span>
+        </div>
+        <div id="box">
+            this is a box Lol !
+        </div>
+
+    </div>
+
+    <div class="copy">
+        <h2>You can copy the css changes here!</h2>
+        <div id="cssbox">
+        </div>
+
+        <button id="copycss" onclick="copycss()">Copy CSS</button>
+    </div>
+
+    <script src="app.js"></script>
+
+</div>
+
+<body></body>
+
+</html>
